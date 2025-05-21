@@ -9,7 +9,6 @@ This is the frontend of a full-stack ticketing and journaling application, built
 - Create, read, update, and delete notes/tickets
 - Redux store for global state management
 - Redux Thunk for handling async API calls
-- Responsive and accessible UI
 - Error handling and user feedback
 
 ---
@@ -17,18 +16,26 @@ This is the frontend of a full-stack ticketing and journaling application, built
 ## 🧰 Tech Stack
 
 - **Frontend Framework:** React
-- **State Management:** Redux, Redux Thunk
-- - **State Management:** Redux (Core) with Redux Thunk for async actions
+- **State Management:** Redux (Core) with Redux Thunk for async actions
 - **Styling:** CSS
 - **HTTP Client:** fetch
+
+---
+
+## ⚙️ State Management Architecture
+
+This project uses **Redux Core** (i.e., manually written action creators, action types, and reducers) along with **Redux Thunk** for handling asynchronous API calls.
+
+- Organized Redux files into `actions/`, `reducers/`, and `store.js`
+- Manages loading states, and note/ticket data
 
 ---
 
 ## 🚀 Getting Started
 
 ### 1. Clone the repository
-- git clone https://github.com/yourusername/ticketing-frontend.git
-- cd ticketing-frontend
+- git clone https://github.com/Louisa-Otoo/ticket_app_with_redux_core.git
+- cd ticket_app_with_redux_core
 
 ## 2. Install dependencies
 npm install
@@ -39,22 +46,15 @@ In the root of your project:
 REACT_APP_API_URL=http://localhost:5000/api
 Replace the URL with your backend's live or local address.
 
-4. Start the frontend
+### 4. Start the frontend
 npm start
 App should run at: http://localhost:5000
 
-🔄 Backend Integration
+### 🔄 Backend Integration
 This frontend connects to the Ticketing & Journaling Backend built with Node.js, Express, and MongoDB.
 
 Make sure the backend server is running for full functionality.
 
-📸 Screenshots
-Home Page
 
-Note Creation
-
-
-📌 Notes
-Protected routes use conditional rendering and redirection
-
+### 📌 Notes
 Easily extendable for task tracking, personal journaling, or customer ticketing systems
