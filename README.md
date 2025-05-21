@@ -43,12 +43,12 @@ npm install
 ### 3. Create .env file
 In the root of your project:
 
-REACT_APP_API_URL=http://localhost:5000/api
-Replace the URL with your backend's live or local address.
+- REACT_APP_API_URL=http://localhost:5000/api
+- Replace the URL with your backend's live or local address.
 
 ### 4. Start the frontend
-npm start
-App should run at: http://localhost:5000
+- npm start
+- App should run at: http://localhost:5000
 
 ### 🔄 Backend Integration
 This frontend connects to the Ticketing & Journaling Backend built with Node.js, Express, and MongoDB.
