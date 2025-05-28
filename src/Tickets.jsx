@@ -33,7 +33,7 @@ const Tickets = () => {
       <div className='all-tickets'>
 
         {dataCard.map((ticket) => (
-          <div key={ticket._id} className='ticket-item'> // styles for worked on
+          <div key={ticket._id} className='ticket-item'>
             <h3>{ticket.title}</h3>
             <p>{ticket.description}</p>
               
