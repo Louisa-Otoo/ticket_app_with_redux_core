@@ -30,6 +30,11 @@ This project uses **Redux Core** (i.e., manually written action creators, action
 - Manages loading states, and note/ticket data
 
 ---
+## Demo
+
+[View App Here](https://ticket-app-with-redux-frontend.onrender.com/)
+
+---
 
 ## 🚀 Getting Started
 
