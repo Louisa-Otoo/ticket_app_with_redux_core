@@ -1,9 +1,10 @@
+const baseUrl = process.env.REACT_APP_API_URL.replace(/\/+$/, '');
 
 export const addTicketRequest = (ticket) => async (dispatch, getState) => {
     const body = JSON.stringify(ticket)
 
     try {
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/ticket`, {
+        const response = await fetch(`${baseUrl}/api/ticket`, {
         method: 'POST',
         body,
         headers: {
@@ -26,7 +27,7 @@ export const addTicketRequest = (ticket) => async (dispatch, getState) => {
 export const fetchTicketRequest = (tickets) => async (dispatch, getState) => {
 
     try {
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/tickets`);
+        const response = await fetch(`${baseUrl}/api/tickets`);
 
         const tickets = await response.json();
         dispatch({ type: 'FETCHTICKET', payload: tickets });
@@ -42,7 +43,7 @@ export const fetchTicketRequest = (tickets) => async (dispatch, getState) => {
 export const deleteTicketRequest = (id) => async (dispatch, getState) => {
 
     try {
-        const response = await fetch(`${process.env.REACT_APP_API_URL}/api/ticket/${id}`, {
+        const response = await fetch(`${baseUrl}/api/ticket/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
@@ -63,7 +64,7 @@ export const deleteTicketRequest = (id) => async (dispatch, getState) => {
 
     export const updateTicketRequest = (id) => async (dispatch, getState) => {
         try {
-            const response = await fetch(`${process.env.REACT_APP_API_URL}/api/tickets/${id}`, {
+            const response = await fetch(`${baseUrl}/api/tickets/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
