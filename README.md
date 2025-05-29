@@ -48,7 +48,7 @@ npm install
 ### 3. Create .env file
 In the root of your project:
 
-- REACT_APP_API_URL=http://localhost:5000/api
+- REACT_APP_API_URL=http://localhost:5000
 - Replace the URL with your backend's live or local address.
 
 ### 4. Start the frontend
