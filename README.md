@@ -57,7 +57,6 @@ In the root of your project:
 
 ### 🔄 Backend Integration
 This frontend connects to the Ticketing & Journaling Backend built with Node.js, Express, and MongoDB. It works with the backend API to persist and retrieve ticket data, enabling full CRUD functionality for tickets and notes.
-
 Make sure the backend server is running for full functionality.
 
 
